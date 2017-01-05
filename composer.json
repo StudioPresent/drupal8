@@ -24,7 +24,7 @@
         "drupal/console": "~1.0"
     },
     "config": {
-      "vendor-dir": "../vendor"
+      "vendor-dir": "../public_html/vendor"
     },
     "require-dev": {
         "behat/mink": "~1.7",
