@@ -59,6 +59,7 @@ class ScriptHandler {
     
     $install_cmd = "drush site-install --account-name=gorann --account-pass=123456 --db-url=mysql://root:Zondara#3@localhost/drupaltest";
     $shell_output = shell_exec($install_cmd);
+    echo $shell_output;
     $event->getIO()->write($shell_output);
   }
 
