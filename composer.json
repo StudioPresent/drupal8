@@ -41,11 +41,10 @@
         ],
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "bash drupal-install.sh"
+            "DrupalProject\\composer\\ScriptHandler::installDrupal"
         ],
         "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "bash drupal-install.sh"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ]
     },
     "extra": {

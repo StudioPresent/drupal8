@@ -95,9 +95,13 @@ class ScriptHandler {
     }
   }
   
-  // public static function installDrupal(Event $event) {
-    // $build_cmd = "drush site-install --account-name=gorann --account-pass=Slimara#50 --db-url=mysql://root:Zondara#3@localhost/drupaltest";
-    // $shell_output = shell_exec($build_cmd);
-  // }
+  public static function installDrupal(Event $event) {
+    $io = $event->getIO();
+    if ($io->askConfirmation("Are you sure you want to proceed? ", false)) {
+      $build_cmd = "drush site-install --account-name=gorann --account-pass=Slimara#50 --db-url=mysql://root:Zondara#3@localhost/drupaltest -y";
+      $shell_output = shell_exec($build_cmd);
+      return true;
+    }
+  }
 
 }
