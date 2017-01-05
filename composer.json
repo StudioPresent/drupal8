@@ -59,11 +59,11 @@
     },
     "extra": {
         "installer-paths": {
-            "public_html/core": ["type:drupal-core"],
-            "public_html/libraries/{$name}": ["type:drupal-library"],
-            "public_html/modules/contrib/{$name}": ["type:drupal-module"],
-            "public_html/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "public_html/themes/contrib/{$name}": ["type:drupal-theme"]
+            "../core": ["type:drupal-core"],
+            "../libraries/{$name}": ["type:drupal-library"],
+            "../modules/contrib/{$name}": ["type:drupal-module"],
+            "../profiles/contrib/{$name}": ["type:drupal-profile"],
+            "../themes/contrib/{$name}": ["type:drupal-theme"]
         }
     }
 }
