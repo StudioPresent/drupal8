@@ -41,13 +41,11 @@
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "drush site-install --account-name=gorann --account-pass=123456 --db-url=mysql://root:Zondara#3@localhost/drupaltest"
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::installDrupal"
         ]
     },
     "extra": {
