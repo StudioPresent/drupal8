@@ -23,9 +23,6 @@
         "drush/drush": "~8.0",
         "drupal/console": "~1.0"
     },
-    "config": {
-      "vendor-dir": "../public_html/vendor"
-    },
     "require-dev": {
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
@@ -63,10 +60,10 @@
     "extra": {
         "installer-paths": {
             "../core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "..//libraries/{$name}": ["type:drupal-library"],
+            "../modules/contrib/{$name}": ["type:drupal-module"],
+            "../profiles/contrib/{$name}": ["type:drupal-profile"],
+            "../themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         }
     }
