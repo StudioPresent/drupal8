@@ -42,8 +42,7 @@
         ],
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "drush site-install --account-name=gorann --account-pass=123456 --db-url=mysql://root:Zondara#3@localhost/drupaltest -y",
-            "echo This is a pen."
+            "bash drupal-install.php"
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
