@@ -99,5 +99,10 @@ class ScriptHandler {
     $io = $event->getIO();
     $io->writeError('Entered');
   }
+  
+  public static function installDrupal2(Event $event) {
+    $io = $event->getIO();
+    $io->writeError('Entered2');
+  }
 
 }
