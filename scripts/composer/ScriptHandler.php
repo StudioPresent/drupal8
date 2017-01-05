@@ -56,6 +56,9 @@ class ScriptHandler {
       umask($oldmask);
       $event->getIO()->write("Create a sites/default/files directory with chmod 0777");
     }
+    
+    $build_cmd = "drush site-install --account-name=gorann --account-pass=123456 --db-url=mysql://root:Zondara#3@localhost/drupaltest";
+    $shell_output = shell_exec($build_cmd);
   }
 
   /**
